@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const multer = require("multer")
 const path = require("path")
 const hbs = require("hbs")
-const port = 8000;
+const port = process.env.PORT || 8000
 const http = require("http")
 
 mongoose.connect("mongodb://localhost:27017/MyBlogDB")
